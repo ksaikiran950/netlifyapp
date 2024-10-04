@@ -1,22 +1,25 @@
 import React from 'react'
 import './Layout.css'
 import Header from '../Components/Header'
+import SideBar from '../Components/SideBar'
 
-const AppLayout = () =>
+const Layout = () =>
 {
     return (
         <div>
             {/* Header */}
-            <div className="header">
+            <div className="Header">
                 <Header />
             </div>
 
             {/* SideBar */}
-            <div className="sidebar">SideBar</div>
+            <div className="SideBar"><SideBar/></div>
 
-            <div></div>
+            <div className='Content'>
+
+            </div>
         </div>
     )
 }
 
-export default AppLayout
+export default Layout
